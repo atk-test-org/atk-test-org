@@ -121,7 +121,7 @@ function getEstInfo() {
   var patternChk = new RegExp (userInputUpper,"m");
 
   //Querying data in Central List
-  var cenData = gettext('https://asiftk.github.io/data/ro-cen.txt');
+  var cenData = gettext('https://atk-test-org.github.io/data/ro-cen.txt');
   var cenChk = cenData.match(patternChk);
   if(isInputValid == true && userInputLen == 15 && cenChk == userInputUpper) {
     statusFlag = 1;
@@ -132,7 +132,7 @@ function getEstInfo() {
     }
 
   //Querying data in Yelhanka List
-  var mwmData = gettext('https://asiftk.github.io/data/ro-mwm.txt');
+  var mwmData = gettext('https://atk-test-org.github.io/data/ro-mwm.txt');
   var mwmchk = mwmData.match(patternChk);
   if(isInputValid == true && userInputLen == 15 && mwmchk == userInputUpper) {
     statusFlag = 1;
@@ -143,7 +143,7 @@ function getEstInfo() {
     }
 
   //Querying data in Yelhanka List
-  var ylkData = gettext('https://asiftk.github.io/data/ro-ylk.txt');
+  var ylkData = gettext('https://atk-test-org.github.io/data/ro-ylk.txt');
   var ylkchk = ylkData.match(patternChk);
   if(isInputValid == true && userInputLen == 15 && ylkchk == userInputUpper) {
     statusFlag = 1;
